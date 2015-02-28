@@ -1,3 +1,7 @@
+# == Class: ros::rosdep
+#
+# A class to install and initialize rosdep
+#
 class ros::rosdep {
   # TODO parameterize on python3
   exec {'rosdep-init':

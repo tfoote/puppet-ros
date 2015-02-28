@@ -1,3 +1,7 @@
+# == Class: ros::params
+#
+# A class to load parameters for the ros class
+#
 class ros::params {
 
   # TODO better parameterization
@@ -7,34 +11,38 @@ class ros::params {
 
   case $::operatingsystem {
     Ubuntu: {
-      $repo_key            = 'B01FA116'
-      $repo_key_url        = 'https://raw.githubusercontent.com/ros/rosdistro/master/ros.key'
-      $repo_url            = 'http://packages.ros.org/ros/ubuntu'
-      $repo_component      = "main"
+      $repo_key         = 'B01FA116'
+      $repo_key_url =\
+        'https://raw.githubusercontent.com/ros/rosdistro/master/ros.key'
+      $repo_url         = 'http://packages.ros.org/ros/ubuntu'
+      $repo_component   = 'main'
 
       # By default, install the latest available ROS release for
       # the platform.
       case $::operatingsystemrelease {
         10.04: {
-          $ros_version     = "fuerte"
+          $ros_version     = 'fuerte'
         }
         12.04: {
-          $ros_version     = "hydro"
+          $ros_version     = 'hydro'
         }
         12.10: {
-          $ros_version     = "hydro"
+          $ros_version     = 'hydro'
         }
         13.04: {
-          $ros_version     = "hydro"
+          $ros_version     = 'hydro'
         }
         13.10: {
-          $ros_version     = "indigo"
+          $ros_version     = 'indigo'
         }
         14.04: {
-          $ros_version     = "indigo"
+          $ros_version     = 'indigo'
         }
         14.10: {
-          $ros_version     = "jade"
+          $ros_version     = 'jade'
+        }
+        default: { # latest lts
+          $ros_version     = 'indigo'
         }
 
       }

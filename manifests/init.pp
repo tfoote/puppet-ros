@@ -29,11 +29,11 @@
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Tully Foote <tfoote@osrfoundatino.org>
 #
 # === Copyright
 #
-# Copyright 2015 Your name here, unless otherwise noted.
+# Copyright 2015 Open Source Robotics Foundation, Inc.
 #
 class ros {
   include ros::params
