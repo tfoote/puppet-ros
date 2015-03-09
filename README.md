@@ -31,6 +31,8 @@ as well.
   This will add the ROS apt sources to your list install the standard ros
   toolchain packages as well as a parameterized core package.
 
+  It will also initialize rosdep.
+
 
 ### Beginning with ros
 
