@@ -11,8 +11,8 @@ class ros::params {
 
   case $::operatingsystem {
     Ubuntu: {
-      $repo_key         = 'B01FA116'
-      $repo_key_url     = 'https://raw.githubusercontent.com/ros/rosdistro/master/ros.key'
+      $repo_key         = '421C365BD9FF1F717815A3895523BAEEB01FA116'
+      $repo_key_url     = 'hkp://ha.pool.sks-keyservers.net'
       $repo_url         = 'http://packages.ros.org/ros/ubuntu'
       $repo_component   = 'main'
 
