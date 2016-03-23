@@ -40,4 +40,6 @@ class ros {
   include ros::install
   include ros::rosdep
 
+  $setup_file = "/opt/ros/${ros::params::ros_version}/setup.bash"
+
 }
