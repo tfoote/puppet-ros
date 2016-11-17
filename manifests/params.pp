@@ -41,7 +41,7 @@ class ros::params {
           $ros_version     = 'jade'
         }
         default: { # latest lts
-          $ros_version     = 'indigo'
+          $ros_version     = 'kinetic'
         }
 
       }
