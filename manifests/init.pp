@@ -29,7 +29,7 @@
 #
 # === Authors
 #
-# Tully Foote <tfoote@osrfoundatino.org>
+# Tully Foote <tfoote@osrfoundation.org>
 #
 # === Copyright
 #
