@@ -49,6 +49,12 @@ class ros::params {
         16.04: {
           $ros_version     = 'kinetic'
         }
+        16.10: {
+          $ros_version     = 'lunar'
+        }
+        17.04: {
+          $ros_version     = 'lunar'
+        }
         default: { # latest lts
           $ros_version     = 'kinetic'
         }
