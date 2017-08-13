@@ -36,8 +36,10 @@
 # Copyright 2015 Open Source Robotics Foundation, Inc.
 #
 class ros {
-  include ros::params
-  include ros::install
-  include ros::rosdep
+  require ros::params
+  require ros::install
+  require ros::rosdep
+
+  $setup_file = "/opt/ros/${ros::params::ros_version}/setup.bash"
 
 }
