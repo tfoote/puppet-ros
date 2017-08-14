@@ -19,30 +19,34 @@ class ros::install {
 
   package { $ros::params::ros_base_package:
     ensure  => 'installed',
-    require => [ Apt::Source['ros-latest'],
-                 Class['apt::update']
-                 ]
+    require => [
+      Apt::Source['ros-latest'],
+      Class['apt::update']
+      ]
   }
 
   package { 'python-rosdep':
     ensure  => 'installed',
-    require => [ Apt::Source['ros-latest'],
-                 Class['apt::update']
-                 ]
+    require => [
+      Apt::Source['ros-latest'],
+      Class['apt::update']
+      ]
   }
 
   package { 'python-rosinstall':
     ensure  => 'installed',
-    require => [ Apt::Source['ros-latest'],
-                 Class['apt::update']
-                 ]
+    require => [
+      Apt::Source['ros-latest'],
+      Class['apt::update']
+      ]
   }
 
   package { 'python-rosdistro':
     ensure  => 'latest',
-    require => [ Apt::Source['ros-latest'],
-                 Class['apt::update']
-                 ]
+    require => [
+      Apt::Source['ros-latest'],
+      Class['apt::update']
+      ]
   }
 
 }
