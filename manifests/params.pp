@@ -55,8 +55,14 @@ class ros::params {
         17.04: {
           $ros_version     = 'lunar'
         }
+        17.10: {
+          $ros_version     = 'melodic'
+        }
+        18.04: {
+          $ros_version     = 'melodic'
+        }
         default: { # latest lts
-          $ros_version     = 'kinetic'
+          $ros_version     = 'melodic'
         }
 
       }
